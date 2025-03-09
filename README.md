@@ -11,7 +11,7 @@ Google Cloud Platform (GCP)
 - Hadoop 3.3.4
 - Máquina virtual: e2-standard-4 (4 vCPUs, 16 GB memoria)
 - Sistema operativo: Debian 11
-- 
+  
 Stack ELK
 - ElasticSearch 8.14.1
 - Logstash 8.14.1
@@ -50,6 +50,13 @@ Mi arquitectura combina:
 gsutil cp gs://bucket-para-elastic/jars/elastic/elasticsearch-hadoop-8.14.1.jar .
 gsutil cp gs://bucket-para-elastic/jars/elastic/commons-httpclient-3.1.jar .
 ```
+![2025-03-06_23-52-14](https://github.com/user-attachments/assets/4bf728cc-736f-4761-9b14-2e9e305e7453)
+Acá creamos el bucket 
+![2025-03-06_23-56-13](https://github.com/user-attachments/assets/0800e70f-8607-4bb7-bd77-50c7e8716980)
+Archivos cargados
+![2025-03-07_00-19-10](https://github.com/user-attachments/assets/11a47962-5db8-4163-84dc-dfafd3da95a4)
+captura de pantalla de las instancias de VM en Google Cloud Console.
+
 
 ### Parte 2: Configuración del Servidor ElasticSearch
 
