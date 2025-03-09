@@ -51,12 +51,11 @@ gsutil cp gs://bucket-para-elastic/jars/elastic/elasticsearch-hadoop-8.14.1.jar 
 gsutil cp gs://bucket-para-elastic/jars/elastic/commons-httpclient-3.1.jar .
 ```
 ![2025-03-06_23-52-14](https://github.com/user-attachments/assets/4bf728cc-736f-4761-9b14-2e9e305e7453)
-Acá creamos el bucket 
+*Fig. 1: Acá creamos el bucket 
 ![2025-03-06_23-56-13](https://github.com/user-attachments/assets/0800e70f-8607-4bb7-bd77-50c7e8716980)
-Archivos cargados
+*Fig. 2: Archivos cargados
 ![2025-03-07_00-19-10](https://github.com/user-attachments/assets/11a47962-5db8-4163-84dc-dfafd3da95a4)
-captura de pantalla de las instancias de VM en Google Cloud Console.
-
+*Fig. 3: captura de pantalla de las instancias de VM en Google Cloud Console.
 
 ### Parte 2: Configuración del Servidor ElasticSearch
 
@@ -66,6 +65,16 @@ captura de pantalla de las instancias de VM en Google Cloud Console.
    - Puerto 9200 para ElasticSearch
    - Puerto 5601 para Kibana
 4. Verifiqué la conectividad entre el clúster Hadoop y el servidor ElasticSearch
+
+![2025-03-09_00-21-33](https://github.com/user-attachments/assets/0d2a4b21-a1cc-4829-b32d-0cdf95e54822)
+*Fig. 4: Configuración del archivo elasticsearch.yml con seguridad deshabilitada para permitir conexiones desde Hadoop*
+
+Como se puede observar en la configuración, establecí los siguientes parámetros clave:
+- `xpack.security.enabled: false` - Desactivé la seguridad para esta prueba de concepto
+- `network.host: 0.0.0.0` - Configuré el servidor para aceptar conexiones desde cualquier dirección IP
+- `http.port: 9200` - Mantuve el puerto estándar de ElasticSearch
+- `discovery.type: single-node` - Configuré un único nodo para simplificar la implementación
+
 
 ### Parte 3: Configuración de la Conexión en el Clúster Hadoop
 
