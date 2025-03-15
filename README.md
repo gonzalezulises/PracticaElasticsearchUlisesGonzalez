@@ -4,7 +4,7 @@
 
 En este proyecto he demostrado la integración entre Hadoop y ElasticSearch, creando una conexión funcional entre Hive y un índice de ElasticSearch. La combinación de estas tecnologías me permitió aprovechar lo mejor de ambos mundos: el procesamiento masivo de datos de Hadoop y las capacidades de búsqueda y análisis en tiempo real de ElasticSearch.
 
-Requisitos Técnicos y Software Utilizado
+## Requisitos Técnicos y Software Utilizado
 
 Google Cloud Platform (GCP)
 - Dataproc versión 2.1
@@ -285,3 +285,4 @@ La integración de Hadoop con ElasticSearch me proporcionó una solución podero
 Esta combinación resultó ideal para casos de uso como análisis de logs, búsqueda de texto completo en grandes repositorios de documentos, análisis de datos en tiempo real y muchas otras aplicaciones de Big Data.
 
 
+Elaborado por Ulises González en la ciudad de Panamá, los 15 días del mes de marzo de 2025
