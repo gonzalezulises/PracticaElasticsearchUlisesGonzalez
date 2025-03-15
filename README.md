@@ -101,14 +101,17 @@ Estos comandos me permitieron:
 - Copiar los JAR necesarios al directorio de bibliotecas de Hive
 
 ![2025-03-07_01-19-46](https://github.com/user-attachments/assets/1af4e32e-30e8-4039-9a8d-8dbd2339a235)
+
 *Fig. 5: Proceso de instalación y configuración del servicio Elasticsearch en el clúster Hadoop*
 
 Como se ve en la imagen, instalé y configuré Elasticsearch 8.17.3 en el clúster, habilitando y arrancando el servicio para que esté disponible para las conexiones desde Hive. La configuración del servicio se realizó mediante systemctl, asegurando que Elasticsearch se ejecute automáticamente al iniciar el sistema.
 
 ![2025-03-07_01-21-59](https://github.com/user-attachments/assets/b84bd60f-17a3-42a3-9383-ca3696ad5957)
+
 *Fig. 6: Esta imagen muestra la interfaz de Google Cloud Console con la sección de Instancias de VM (máquinas virtuales) del proyecto "BigdataArquitectura"*
 
 ![2025-03-07_01-51-41](https://github.com/user-attachments/assets/eb037914-655d-46c0-b0f5-c738069f366d)
+
 *Fig.7: Esta imagen muestra la consola SSH conectada a la instancia "belegost-m" (el nodo maestro del clúster Hadoop) en Google Cloud.* 
 
 Se puede observar el estado del servicio Hive Metastore, que es un componente crítico para la integración entre Hadoop y ElasticSearch.
@@ -203,9 +206,11 @@ Copytcp 0 0 0.0.0.0:5601 0.0.0.0:* LISTEN
 Esto indica que Kibana está correctamente configurado, ejecutándose y escuchando en el puerto 5601 en todas las interfaces de red (0.0.0.0), lo que significa que está accesible desde fuera del servidor.
 
 <img width="1298" alt="captura (1)" src="https://github.com/user-attachments/assets/871a0ff8-88b7-4357-8cd3-d651a3bebbca" />
+
 *Fig 10: Dashboard en blanco, pero con los datos listos para crear visualizaciones*
 
 ![2025-03-08_23-56-38](https://github.com/user-attachments/assets/85b46260-e78c-4071-995f-7097f8a87595)
+
 *Fig 11: La imagen muestra un dashboard de Kibana que has creado con múltiples visualizaciones de los datos almacenados en el índice "alumnos" de ElasticSearch*
 
 El dashboard contiente: 
