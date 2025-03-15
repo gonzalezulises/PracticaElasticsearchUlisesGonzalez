@@ -1,6 +1,6 @@
-# Integración Hadoop-ElasticSearch
+# Entrega Big Data Arquitectura
 
-## Descripción del Proyecto
+## Descripción de la práctica
 
 En este proyecto he demostrado la integración entre Hadoop y ElasticSearch, creando una conexión funcional entre Hive y un índice de ElasticSearch. La combinación de estas tecnologías me permitió aprovechar lo mejor de ambos mundos: el procesamiento masivo de datos de Hadoop y las capacidades de búsqueda y análisis en tiempo real de ElasticSearch.
 
